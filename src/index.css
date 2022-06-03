@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 20px 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  margin-top: 80px;
+  height: 50px;
+}
+
+.bannerImage {
+  display: flex;
+  height: 800px;
+  width: 100%;
+  background-image: url("./assets/images/costa_rica_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+#tagline {
+  color: white;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px gray;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.customSection {
+  width: 65%;
+  height: 100%;
+  text-align: center;
+  margin: 60px;
+}
+
+.customSection h1 {
+  margin-bottom: 80px;
+  padding-top: 100px;
+}
