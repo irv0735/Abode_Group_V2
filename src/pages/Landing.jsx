@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -12,7 +11,10 @@ import caribbean from '../assets/images/caribbean_coast.jpg';
 
 import { About, Area } from '../components/index';
 
-const Landing = () => (
+const Landing = () => {
+
+return (
+  <>
   <div className="landing">
     <div id="home" className="bannerImage" title="Costa Rica Overview Image">
       <Grid 
@@ -96,10 +98,12 @@ const Landing = () => (
         </Grid>
       </Grid>
     </div>
-    <div class="customSection"><Area /></div>
-    <div class="customSection"><About /></div>
-  </div> 
+    <div className="customSection"><Area /></div>
+    <div className="customSection"><About /></div>
+  </div>
+  <Outlet />
+  </> 
 );
-
+}
 
 export default Landing;

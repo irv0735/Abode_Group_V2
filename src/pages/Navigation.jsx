@@ -1,9 +1,10 @@
-import React from "react";
+import { Outlet } from 'react-router-dom'
 import './navigation.css';
 
 const Navigation = () => {
   
   return (
+    <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
         <h1>
@@ -29,6 +30,8 @@ const Navigation = () => {
         </nav>
       </div>
     </nav>
+    <Outlet />
+    </>
   );
 }
 

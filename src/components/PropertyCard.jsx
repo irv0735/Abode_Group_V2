@@ -58,6 +58,7 @@ function PropertyCard(props) {
           src={bedroomPhoto}
           // alt={listing.name}
           className="categoryListingImg"
+          alt='main'
         />
         <div className="categoryListingDetails">
           <p className="categoryListingLocation">{props.location}</p>

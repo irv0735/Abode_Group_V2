@@ -1,5 +1,4 @@
 import { PropertyCard } from "../components/index";
-import { Grid } from "@mui/material";
 
 const propertyData = [
   {

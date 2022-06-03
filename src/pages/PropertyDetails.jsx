@@ -22,9 +22,13 @@ function PropertyDetails() {
         src={bedroomPhoto}
         // alt={listing.name}
         className="propertyDetailsImg"
+        alt="main"
       />
       {propertyData.map((property) => (
-        <div className="listingDetails">
+        <div 
+          className="listingDetails"
+          key={property.id}
+        >
           <p className="listingName">
             {property.name} - ${property.rate}
           </p>
