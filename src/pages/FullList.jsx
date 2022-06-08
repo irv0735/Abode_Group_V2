@@ -1,11 +1,13 @@
 import { useContext } from 'react';
 
 import { PropertiesContext } from '../contexts/properties.context';
+import { UserContext } from '../contexts/user.context';
 
 import { PropertyCard } from "../components/index";
 
 function FullList() {
   const { propertiesMap } = useContext(PropertiesContext);
+  const { currentUser } = useContext(UserContext);
 
   return (
     <div className="category">
