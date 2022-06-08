@@ -26,6 +26,9 @@ const Navigation = () => {
             <li>
               <a href="/guide">Guest Guide</a>
             </li>
+            <li>
+              <a href='/admin'>Admin</a>
+            </li>
           </ul>
         </nav>
       </div>

@@ -1,5 +1,13 @@
 import { initializeApp } from 'firebase/app';
 
+import { 
+  getAuth,
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged
+} from 'firebase/auth'
+
 import {
   getFirestore,
   doc,
@@ -20,9 +28,10 @@ const firebaseConfig = {
   appId: "1:364097386790:web:a121d829d9be096b4029e7"
 };
 
-export const firebaseApp = initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
 
 export const db = getFirestore();
+export const auth = getAuth();
 
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd, field) => {
   const collectionRef = collection(db, collectionKey);
@@ -35,3 +44,19 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd, fie
 
   await batch.commit();
 };
+
+export const createAuthUserWithEmailAndPassword = async (email, password) => {
+  if(!email || !password) return;
+
+  return await createUserWithEmailAndPassword(auth, email, password);
+}
+
+export const signInAuthWithEmailAndPassword = async (email, password) => {
+  if(!email || !password) return;
+
+  return await signInWithEmailAndPassword(auth, email, password);
+}
+
+export const signOutUser = async () => await signOut(auth);
+
+export const onAuthStateChangedListener = (callback) => onAuthStateChanged(auth, callback);
