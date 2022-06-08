@@ -6,3 +6,4 @@ export { default as Caribbean } from "./Caribbean";
 export { default as Guide } from "./Guide";
 export { default as FullList } from "./FullList";
 export { default as PropertyDetails } from "./PropertyDetails";
+export { default as SignIn } from './sign-in/sign-in.component';

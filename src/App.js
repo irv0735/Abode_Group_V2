@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Footer } from "./components";
 import {
   Navigation,
+  SignIn,
   Landing,
   Pacific,
   SanJose,
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Landing />} />
+          <Route path='/admin' element={<SignIn />} />
           <Route path="/pacific" element={<Pacific />} />
           <Route path="/sanjose" element={<SanJose />} />
           <Route path="/caribbean" element={<Caribbean />} />
