@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald&display=swap");
+
 :root {
   --parchment: #fafafa;
   --salmon: #fbacaf;
@@ -13,7 +15,8 @@
 body {
   margin: 0;
   padding: 20px 40px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Amatic SC", cursive;
+  font-family: "Oswald", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url("../src/assets/images/caribbean_coast.jpg");

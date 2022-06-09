@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  border-radius: 30px;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+nav {
+  font-size: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  padding-right: 30px;
+}
+
+h1 {
+  padding-left: 30px;
+}

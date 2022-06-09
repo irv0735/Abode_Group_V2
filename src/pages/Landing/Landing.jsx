@@ -5,9 +5,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import pacific from "../assets/images/pacific_coast.jpg";
-import sanJose from "../assets/images/san_jose.jpg";
-import caribbean from "../assets/images/caribbean_coast.jpg";
+import pacific from "../../assets/images/pacific_coast.jpg";
+import sanJose from "../../assets/images/san_jose.jpg";
+import caribbean from "../../assets/images/caribbean_coast.jpg";
 
 const Landing = () => {
   return (
@@ -34,28 +34,24 @@ const Landing = () => {
               md={4}
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <Card sx={{ maxWidth: 500 }}>
-                <CardActionArea component="div">
-                  <Link to="/pacific">
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image={pacific}
-                      alt="green iguana"
-                    />
-                  </Link>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Pacific
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+              <div class="card w-96 glass">
+                <figure>
+                  <img src={pacific} alt="green iguana" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Pacific</h2>
+                  <p>
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </p>
+                  <div class="card-actions justify-end">
+                    <Link to="/pacific" class="btn btn-primary">
+                      View Properties
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </Grid>
             <Grid
               item
@@ -63,28 +59,24 @@ const Landing = () => {
               md={4}
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <Card sx={{ maxWidth: 500 }}>
-                <CardActionArea>
-                  <Link to="/sanjose">
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image={sanJose}
-                      alt="green iguana"
-                    />
-                  </Link>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      San José
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+              <div class="card w-96 glass">
+                <figure>
+                  <img src={sanJose} alt="green iguana" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">San José</h2>
+                  <p>
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </p>
+                  <div class="card-actions justify-end">
+                    <Link to="/sanjose" class="btn btn-primary">
+                      View Properties
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </Grid>
             <Grid
               item
@@ -92,28 +84,24 @@ const Landing = () => {
               md={4}
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <Card sx={{ maxWidth: 500 }}>
-                <CardActionArea>
-                  <Link to="/caribbean">
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image={caribbean}
-                      alt="green iguana"
-                    />
-                  </Link>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Caribbean
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+              <div class="card w-96 glass">
+                <figure>
+                  <img src={caribbean} alt="green iguana" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Caribbean</h2>
+                  <p>
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </p>
+                  <div class="card-actions justify-end">
+                    <Link to="/caribbean" class="btn btn-primary">
+                      View Properties
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </Grid>
           </Grid>
         </div>
