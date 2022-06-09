@@ -1,9 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Footer } from "./components";
 import {
-  Navigation,
   SignIn,
-  Landing,
   Pacific,
   SanJose,
   Caribbean,
@@ -11,15 +9,16 @@ import {
   Guide,
   PropertyDetails,
 } from "./pages";
+import Navigation from "./pages/Navigation/Navigation";
+import Landing from "./pages/Landing/Landing";
 
 const App = () => {
-
   return (
     <>
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Landing />} />
-          <Route path='/admin' element={<SignIn />} />
+          <Route path="/admin" element={<SignIn />} />
           <Route path="/pacific" element={<Pacific />} />
           <Route path="/sanjose" element={<SanJose />} />
           <Route path="/caribbean" element={<Caribbean />} />
@@ -30,7 +29,7 @@ const App = () => {
       </Routes>
       <Footer />
     </>
-  )     
-}
+  );
+};
 
 export default App;
