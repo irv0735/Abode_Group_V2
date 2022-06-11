@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Footer } from "./components";
+import Footer from "./components/Footer/Footer";
 import {
   SignIn,
   Pacific,
