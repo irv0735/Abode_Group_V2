@@ -86,8 +86,17 @@ a {
 
 .categoryListingInfoDiv {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 275px;
+  margin-top: 0.5rem;
+}
+
+.card-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .categoryListingInfoText {
