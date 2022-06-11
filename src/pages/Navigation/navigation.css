@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 .navbar {
+  font-family: "Amatic SC", cursive;
+  font-family: "Oswald", sans-serif;
   border-radius: 30px;
   box-shadow: 0 8px 6px -6px #999;
 }

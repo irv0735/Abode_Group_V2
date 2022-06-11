@@ -3,7 +3,6 @@
 :root {
   --parchment: #fafafa;
   --salmon: #fbacaf;
-  --cloud-blue: #e4f2f5;
   --green-gray: #cfd6ce;
   --brown-purple: #c29da8;
 }
@@ -19,13 +18,6 @@ body {
   font-family: "Oswald", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("../src/assets/images/caribbean_coast.jpg");
-  height: 100vh;
-  width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 code {
@@ -40,26 +32,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.areaInfo {
-  background: radial-gradient(#fff, var(--cloud-blue));
-  flex-direction: column;
-  padding: 10px;
-  margin-top: 30px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.aboutUs {
-  background: radial-gradient(#fff, var(--cloud-blue));
-  flex-direction: column;
-  padding: 10px;
-  margin-top: 30px;
-  margin-bottom: 100px;
-  padding-bottom: 50px;
-  display: flex;
-  align-items: flex-start;
 }
 
 .categoryListingLink {
@@ -152,14 +124,6 @@ a {
 
 .categoryListings {
   padding: 0;
-}
-
-.landing {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  margin-top: 60px;
 }
 
 #tagline {
