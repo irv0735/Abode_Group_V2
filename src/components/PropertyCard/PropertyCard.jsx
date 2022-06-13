@@ -1,8 +1,8 @@
 // import Grid from '@mui/material/Grid';
-import bedroomPhoto from "../assets/photos/bedroom.webp";
+import bedroomPhoto from "../../assets/photos/bedroom.webp";
 import { Link } from "react-router-dom";
-import bedIcon from "../assets/svg/bedIcon.svg";
-import bathtubIcon from "../assets/svg/bathtubIcon.svg";
+import bedIcon from "../../assets/svg/bedIcon.svg";
+import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
 
 function PropertyCard(props) {
   return (
