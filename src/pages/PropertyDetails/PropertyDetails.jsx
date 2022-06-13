@@ -1,5 +1,6 @@
 import React from "react";
-import bedroomPhoto from "../assets/photos/bedroom.webp";
+import ImageSlider from "../../components/Slider/Slider";
+import { SliderData } from "../../components/Slider/SliderData";
 
 const propertyData = [
   {
@@ -18,17 +19,10 @@ const propertyData = [
 function PropertyDetails() {
   return (
     <main>
-      <img
-        src={bedroomPhoto}
-        // alt={listing.name}
-        className="propertyDetailsImg"
-        alt="main"
-      />
+      <ImageSlider slides={SliderData} />
+
       {propertyData.map((property) => (
-        <div 
-          className="listingDetails"
-          key={property.id}
-        >
+        <div className="listingDetails" key={property.id}>
           <p className="listingName">
             {property.name} - ${property.rate}
           </p>
