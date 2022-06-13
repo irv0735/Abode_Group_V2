@@ -1,16 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import {
-  SignIn,
-  Pacific,
-  SanJose,
-  Caribbean,
-  FullList,
-  Guide,
-  PropertyDetails,
-} from "./pages";
+import { SignIn, Pacific, SanJose, Caribbean, Guide } from "./pages";
+import FullList from "./pages/FullList/FullList";
 import Navigation from "./pages/Navigation/Navigation";
 import Landing from "./pages/Landing/Landing";
+import PropertyDetails from "./pages/PropertyDetails/PropertyDetails";
 
 const App = () => {
   return (
