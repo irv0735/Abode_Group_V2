@@ -3,11 +3,12 @@
 }
 
 body {
-  background: url("./palm-tree-sunset.avif");
+  background: url("../../assets/images/costa_rica_banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .title-background {
@@ -23,15 +24,18 @@ body {
   margin-top: 70px;
 }
 
-.areaInfo {
-  background: radial-gradient(#fff, var(--cloud-blue));
-  flex-direction: column;
+h1 {
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+.glass {
   padding: 10px;
-  margin-top: 100px;
-  display: flex;
-  align-items: flex-start;
+  margin-top: 50px;
   border-radius: 30px;
-  box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px black;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .aboutUs {
