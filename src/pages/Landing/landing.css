@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url("../../assets/images/costa_rica_banner.jpg");
+  background: url("./palm-pool.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -24,15 +24,22 @@ body {
   margin-top: 70px;
 }
 
-h1 {
+.heading {
   font-size: 30px;
   margin-bottom: -10px;
+  background-color: #e4f2f5;
+  margin-bottom: -50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-right: 1130px;
 }
 
 .glass {
   padding: 10px;
   margin-top: 50px;
-  border-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
   box-shadow: 0 8px 6px -6px black;
   font-size: 20px;
   margin-bottom: 50px;

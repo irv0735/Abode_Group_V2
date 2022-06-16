@@ -5,3 +5,14 @@ category {
   background-size: cover;
   background-attachment: fixed;
 }
+
+.pageHeader {
+  font-size: 30px;
+  margin-bottom: -10px;
+  background-color: #e4f2f5;
+  margin-bottom: -50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-right: 1160px;
+  margin-left: 10px;
+}

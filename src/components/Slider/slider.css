@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,7 @@
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  margin-right: 300px;
 }
 
 .left-arrow {
@@ -32,4 +33,5 @@
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  margin-left: 300px;
 }

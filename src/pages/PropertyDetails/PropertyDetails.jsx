@@ -2,30 +2,38 @@ import React from "react";
 import ImageSlider from "../../components/Slider/ImageSlider";
 import { SliderData } from "../../components/Slider/SliderData";
 import PROPERTY_DATA from "../../property-data";
+import bedIcon from "../../assets/svg/bedIcon.svg";
+import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
 
 const unit = PROPERTY_DATA[0].units[0];
 
 function PropertyDetails() {
   return (
-    <main>
+    <div>
       <ImageSlider slides={unit.photos} />
-
-      <div className="listingDetails" key={unit.id}>
-        <p className="listingName">
-          {unit.name} - ${unit.rate}
-        </p>
-        <p className="listingLocation">{unit.location}</p>
-
-        <ul className="listingDetailsList">
-          <li>{unit.bedrooms > 1 ? `${unit.beds} Bedrooms` : "1 Bedroom"}</li>
-          <li>{unit.baths > 1 ? `${unit.baths} Bathrooms` : "1 Bathroom"}</li>
-        </ul>
-
-        <p className="listingLocationTitle">Calendar</p>
-
-        {/*Calendar*/}
+      <div class="card-body card w-96 glass" key={unit.id}>
+        <div className="categoryListingDetails">
+          <h2 class="card-title">{unit.name} </h2>
+          <p>{unit.location}</p>
+          <p className="categoryListingPrice">${unit.rate} per night</p>
+          <div className="categoryListingInfoDiv">
+            <img src={bedIcon} alt="Bed" />
+            <p className="categoryListingInfoText">
+              {unit.bedrooms > 1 ? `${unit.beds} Bedrooms` : "1 Bedroom"}
+            </p>
+            <img src={bathtubIcon} alt="Bath" />
+            <p className="categoryListingInfoText">
+              {unit.baths > 1 ? `${unit.baths} Bathrooms` : "1 Bathroom"}
+            </p>
+            <div class="card-actions justify-end">
+              <a href={unit.abblink} class="btn btn-primary">
+                View On AirBnB
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
 

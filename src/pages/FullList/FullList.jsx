@@ -4,6 +4,7 @@ import { PropertiesContext } from "../../contexts/properties.context";
 import { UserContext } from "../../contexts/user.context";
 
 import { PropertyCard } from "../../components/index";
+import "./full-list.css";
 
 function FullList() {
   const { propertiesMap } = useContext(PropertiesContext);
