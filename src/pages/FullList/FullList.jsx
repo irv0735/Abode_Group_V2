@@ -13,8 +13,8 @@ function FullList() {
   return (
     <div className="category">
       <h1 className="pageHeader">Properties</h1>
-      <>
-        <ul className="categoryListings">
+      <div className="property-resize">
+        <ul className="categoryListings ">
           {Object.keys(propertiesMap).map((title) => {
             const units = propertiesMap[title];
             return units.map((unit) => (
@@ -32,7 +32,7 @@ function FullList() {
             ));
           })}
         </ul>
-      </>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { SliderData } from "../../components/Slider/SliderData";
 import PROPERTY_DATA from "../../property-data";
 import bedIcon from "../../assets/svg/bedIcon.svg";
 import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
+import "./propertyDetails.css";
 
 const unit = PROPERTY_DATA[0].units[0];
 
@@ -11,7 +12,10 @@ function PropertyDetails() {
   return (
     <div>
       <ImageSlider slides={unit.photos} />
-      <div class="card-body card w-96 glass" key={unit.id}>
+      <div
+        class="card-body card w-96 glass property-details-info"
+        key={unit.id}
+      >
         <div className="categoryListingDetails">
           <h2 class="card-title">{unit.name} </h2>
           <p>{unit.location}</p>
