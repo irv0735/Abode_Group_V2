@@ -1,51 +1,30 @@
 import React from "react";
-import ImageSlider from "../../components/Slider/Slider";
+import ImageSlider from "../../components/Slider/ImageSlider";
 import { SliderData } from "../../components/Slider/SliderData";
+import PROPERTY_DATA from "../../property-data";
 
-const propertyData = [
-  {
-    id: 1,
-    name: "Perfectly Located 2 Story Condo just for YOU!",
-    location: "San Rafael de Escazú, San José Province, Costa Rica",
-    guestCount: 3,
-    bedrooms: 1,
-    beds: 2,
-    baths: 1.5,
-    rate: 87,
-    link: "https://www.airbnb.com/rooms/52828836?guests=1&adults=1&s=67&unique_share_id=f5a499d1-e395-460c-b1ee-c4ce2809fac0",
-  },
-];
+const unit = PROPERTY_DATA[0].units[0];
 
 function PropertyDetails() {
   return (
     <main>
-      <ImageSlider slides={SliderData} />
+      <ImageSlider slides={unit.photos} />
 
-      {propertyData.map((property) => (
-        <div className="listingDetails" key={property.id}>
-          <p className="listingName">
-            {property.name} - ${property.rate}
-          </p>
-          <p className="listingLocation">{property.location}</p>
+      <div className="listingDetails" key={unit.id}>
+        <p className="listingName">
+          {unit.name} - ${unit.rate}
+        </p>
+        <p className="listingLocation">{unit.location}</p>
 
-          <ul className="listingDetailsList">
-            <li>
-              {property.bedrooms > 1
-                ? `${property.beds} Bedrooms`
-                : "1 Bedroom"}
-            </li>
-            <li>
-              {property.baths > 1
-                ? `${property.baths} Bathrooms`
-                : "1 Bathroom"}
-            </li>
-          </ul>
+        <ul className="listingDetailsList">
+          <li>{unit.bedrooms > 1 ? `${unit.beds} Bedrooms` : "1 Bedroom"}</li>
+          <li>{unit.baths > 1 ? `${unit.baths} Bathrooms` : "1 Bathroom"}</li>
+        </ul>
 
-          <p className="listingLocationTitle">Calendar</p>
+        <p className="listingLocationTitle">Calendar</p>
 
-          {/*Calendar*/}
-        </div>
-      ))}
+        {/*Calendar*/}
+      </div>
     </main>
   );
 }
