@@ -15,7 +15,7 @@ const ImageSlider = ({ slides }) => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
+  if (slides.length <= 0) {
     return null;
   }
 
@@ -31,7 +31,7 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="bedroom" className="image" />
+              <img src={slide.image} alt={slide.image.value} className="image" />
             )}
           </div>
         );
