@@ -68,7 +68,7 @@ const Landing = () => {
       </div>
       <Outlet />
       <div id="area-info">
-        <h1 className="glass">Costa Rica Information</h1>
+        <h1 className="heading">Costa Rica Information</h1>
         <div className="glass">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -112,7 +112,7 @@ const Landing = () => {
         </div>
       </div>
       <div id="about-us">
-        <h1 className="glass">About Abode Group</h1>
+        <h1 className="heading">About Abode Group</h1>
         <div className="glass">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

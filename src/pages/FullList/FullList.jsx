@@ -4,6 +4,7 @@ import { PropertiesContext } from "../../contexts/properties.context";
 import { UserContext } from "../../contexts/user.context";
 
 import { PropertyCard } from "../../components/index";
+import "./full-list.css";
 
 function FullList() {
   const { propertiesMap } = useContext(PropertiesContext);
@@ -12,8 +13,8 @@ function FullList() {
   return (
     <div className="category">
       <h1 className="pageHeader">Properties</h1>
-      <>
-        <ul className="categoryListings">
+      <div className="property-resize">
+        <ul className="categoryListings ">
           {Object.keys(propertiesMap).map((title) => {
             const units = propertiesMap[title];
             return units.map((unit) => (
@@ -31,7 +32,7 @@ function FullList() {
             ));
           })}
         </ul>
-      </>
+      </div>
     </div>
   );
 }
