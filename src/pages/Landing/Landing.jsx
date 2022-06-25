@@ -1,10 +1,10 @@
 import { Link, Outlet } from "react-router-dom";
-import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+// import Grid from "@mui/material/Grid";
+// import Card from "@mui/material/Card";
+// import CardContent from "@mui/material/CardContent";
+// import CardMedia from "@mui/material/CardMedia";
+// import Typography from "@mui/material/Typography";
+// import { CardActionArea } from "@mui/material";
 import pacific from "../../assets/images/pacific_coast.jpg";
 import sanJose from "../../assets/images/san_jose.jpg";
 import caribbean from "../../assets/images/caribbean_coast.jpg";
@@ -14,52 +14,52 @@ const Landing = () => {
   return (
     <>
       <div className="landing">
-        <div class="card w-96 glass">
+        <div className="card w-96 glass">
           <figure>
-            <img src={pacific} alt="green iguana" />
+            <img className="card-photo" src={pacific} alt="pacific coast" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">Pacific</h2>
+          <div className="card-body">
+            <h2 className="card-title">Pacific</h2>
             <p>
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              The Pacific coast, home to famous destinations such as Tamarindo, Jaco, Santa Teresa and Manuel Antonio. 
             </p>
-            <div class="card-actions justify-end">
-              <Link to="/pacific" class="btn btn-primary">
+            <div className="card-actions justify-end">
+              <Link to="/pacific" className="btn btn-primary">
                 View Properties
               </Link>
             </div>
           </div>
         </div>
-        <div class="card w-96 glass">
+        <div className="card w-96 glass">
           <figure>
-            <img src={sanJose} alt="green iguana" />
+            <img className="card-photo" src={sanJose} alt="san jose" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">San José</h2>
+          <div className="card-body">
+            <h2 className="card-title">San José</h2>
             <p>
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              Properties located in and around the nation's capital. The perfect place to start or end your trip for easy access
+              to the airport and great shopping. Also very popular for business travel. 
             </p>
-            <div class="card-actions justify-end">
-              <Link to="/sanjose" class="btn btn-primary">
+            <div className="card-actions justify-end">
+              <Link to="/sanjose" className="btn btn-primary">
                 View Properties
               </Link>
             </div>
           </div>
         </div>
-        <div class="card w-96 glass">
+        <div className="card w-96 glass">
           <figure>
-            <img src={caribbean} alt="green iguana" />
+            <img className="card-photo" src={caribbean} alt="caribbean" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">Caribbean</h2>
+          <div className="card-body">
+            <h2 className="card-title">Caribbean</h2>
             <p>
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              The wonders of the Caribbean coast including Limon, Playa Negra, Playa Cocles. This side of the country
+              includes some pristine beaches and lush jungle. You won't find the high rise condos or international hotels here
+              and that's why we love it! 
             </p>
-            <div class="card-actions justify-end">
-              <Link to="/caribbean" class="btn btn-primary">
+            <div className="card-actions justify-end">
+              <Link to="/caribbean" className="btn btn-primary">
                 View Properties
               </Link>
             </div>

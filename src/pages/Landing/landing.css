@@ -58,6 +58,11 @@ body {
   box-shadow: 0 8px 6px -6px #999;
 }
 
+.card-photo {
+  border-radius: 10px 20px 10px 10px;
+  
+}
+
 @media (max-width: 1504px) {
   .heading {
     margin-right: 20px;

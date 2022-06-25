@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { SliderData } from "./SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./slider.css";
 
@@ -22,8 +21,6 @@ const ImageSlider = ({ slides }) => {
   return (
     <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-
       {slides.map((slide, index) => {
         return (
           <div
@@ -31,11 +28,12 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.imageUrl} alt="bedroom" className="image" />
+              <img src={slide.imageUrl} alt="property" className="image" />
             )}
           </div>
         );
       })}
+      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
     </section>
   );
 };

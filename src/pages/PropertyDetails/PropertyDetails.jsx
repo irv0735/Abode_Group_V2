@@ -1,6 +1,5 @@
 import React from "react";
 import ImageSlider from "../../components/Slider/ImageSlider";
-import { SliderData } from "../../components/Slider/SliderData";
 import PROPERTY_DATA from "../../property-data";
 import bedIcon from "../../assets/svg/bedIcon.svg";
 import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
@@ -30,7 +29,7 @@ function PropertyDetails() {
               {unit.baths > 1 ? `${unit.baths} Bathrooms` : "1 Bathroom"}
             </p>
             <div class="card-actions justify-end">
-              <a href={unit.abblink} class="btn btn-primary">
+              <a href={unit.abblink} class="btn btn-primary" target="none">
                 View On AirBnB
               </a>
             </div>

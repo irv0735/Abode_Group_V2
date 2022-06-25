@@ -25,7 +25,7 @@ function PropertyCard(props) {
               {props.baths > 1 ? `${props.baths} Bathrooms` : "1 Bathroom"}
             </p>
             <div class="card-actions justify-end">
-              <a href={props.abblink} className="btn btn-primary">
+              <a href={props.abblink} className="btn btn-primary" target="none">
                 View On AirBnB
               </a>
               <Link to="/property-details" className="btn btn-primary">
