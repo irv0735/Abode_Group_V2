@@ -5,15 +5,15 @@ import study from "./study.webp";
 
 export const SliderData = [
   {
-    image: { bedroom },
+    image: bedroom ,
   },
   {
-    image: { livingRoom },
+    image: livingRoom,
   },
   {
-    image: { kitchen },
+    image: kitchen,
   },
   {
-    image: { study },
+    image: study, 
   },
 ];

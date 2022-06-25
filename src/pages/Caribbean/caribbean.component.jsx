@@ -4,9 +4,8 @@ import { PropertiesContext } from "../../contexts/properties.context";
 // import { UserContext } from "../../contexts/user.context";
 
 import { PropertyCard } from "../../components/index";
-import "./full-list.css";
 
-function FullList() {
+function Caribbean() {
   const { propertiesMap } = useContext(PropertiesContext);
   // const { currentUser } = useContext(UserContext);
 
@@ -15,9 +14,8 @@ function FullList() {
       <h1 className="pageHeader">Properties</h1>
       <div className="property-resize">
         <ul className="categoryListings ">
-          {Object.keys(propertiesMap).map((title) => {
-            const units = propertiesMap[title];
-            return units.map((unit) => (
+          {Object.keys(propertiesMap).filter((title) => title === 'caribbean').map((unit) => {
+            return (
               <PropertyCard
                 key={unit.id}
                 name={unit.name}
@@ -29,7 +27,7 @@ function FullList() {
                 rate={unit.rate}
                 abblink={unit.link}
               />
-            ));
+            );
           })}
         </ul>
       </div>
@@ -37,4 +35,4 @@ function FullList() {
   );
 }
 
-export default FullList;
+export default Caribbean;

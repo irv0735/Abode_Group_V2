@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import { SignIn, Pacific, SanJose, Caribbean, Guide } from "./pages";
+import { SignIn, SanJose, Pacific, Caribbean, Guide } from "./pages";
 import FullList from "./pages/FullList/FullList";
 import Navigation from "./pages/Navigation/Navigation";
 import Landing from "./pages/Landing/Landing";
