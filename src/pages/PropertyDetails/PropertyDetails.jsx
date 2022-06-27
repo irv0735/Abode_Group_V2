@@ -12,7 +12,7 @@ function PropertyDetails() {
     <div>
       <ImageSlider slides={unit.photos} />
       <div
-        class="card-body card w-96 glass property-details-info"
+        className="card-body card w-96 glass property-details-info"
         key={unit.id}
       >
         <div className="categoryListingDetails">

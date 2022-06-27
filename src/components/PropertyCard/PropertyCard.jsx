@@ -1,18 +1,18 @@
 // import Grid from '@mui/material/Grid';
-import bedroomPhoto from "../../assets/photos/bedroom.webp";
+// import bedroomPhoto from "../../assets/photos/bedroom.webp";
 import { Link } from "react-router-dom";
 import bedIcon from "../../assets/svg/bedIcon.svg";
 import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
 
 function PropertyCard(props) {
   return (
-    <div class="card w-96 glass">
+    <div className="card w-96 glass">
       <figure>
-        <img src={bedroomPhoto} alt="green iguana" />
+        <img src={props.photos[0].imageUrl} alt="green iguana" className="card-photo"/>
       </figure>
-      <div class="card-body">
+      <div className="card-body">
         <div className="categoryListingDetails">
-          <h2 class="card-title">{props.name}</h2>
+          <h2 className="card-title">{props.name}</h2>
           <p>{props.location}</p>
           <p className="categoryListingPrice">${props.rate} per night</p>
           <div className="categoryListingInfoDiv">
@@ -24,7 +24,7 @@ function PropertyCard(props) {
             <p className="categoryListingInfoText">
               {props.baths > 1 ? `${props.baths} Bathrooms` : "1 Bathroom"}
             </p>
-            <div class="card-actions justify-end">
+            <div className="card-actions justify-end">
               <a href={props.abblink} className="btn btn-primary" target="none">
                 View On AirBnB
               </a>

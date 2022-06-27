@@ -28,6 +28,7 @@ function FullList() {
                 baths={unit.baths}
                 rate={unit.rate}
                 abblink={unit.link}
+                photos={unit.photos}
               />
             ));
           })}
