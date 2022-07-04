@@ -1,10 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-// import Grid from "@mui/material/Grid";
-// import Card from "@mui/material/Card";
-// import CardContent from "@mui/material/CardContent";
-// import CardMedia from "@mui/material/CardMedia";
-// import Typography from "@mui/material/Typography";
-// import { CardActionArea } from "@mui/material";
 import pacific from "../../assets/images/pacific_coast.jpg";
 import sanJose from "../../assets/images/san_jose.jpg";
 import caribbean from "../../assets/images/caribbean_coast.jpg";
@@ -21,7 +15,8 @@ const Landing = () => {
           <div className="card-body">
             <h2 className="card-title">Pacific</h2>
             <p>
-              The Pacific coast, home to famous destinations such as Tamarindo, Jaco, Santa Teresa and Manuel Antonio. 
+              The Pacific coast, home to famous destinations such as Tamarindo,
+              Jaco, Santa Teresa and Manuel Antonio.
             </p>
             <div className="card-actions justify-end">
               <Link to="/pacific" className="btn btn-primary">
@@ -37,8 +32,9 @@ const Landing = () => {
           <div className="card-body">
             <h2 className="card-title">San José</h2>
             <p>
-              Properties located in and around the nation's capital. The perfect place to start or end your trip for easy access
-              to the airport and great shopping. Also very popular for business travel. 
+              Properties located in and around the nation's capital. The perfect
+              place to start or end your trip for easy access to the airport and
+              great shopping. Also very popular for business travel.
             </p>
             <div className="card-actions justify-end">
               <Link to="/sanjose" className="btn btn-primary">
@@ -54,9 +50,10 @@ const Landing = () => {
           <div className="card-body">
             <h2 className="card-title">Caribbean</h2>
             <p>
-              The wonders of the Caribbean coast including Limon, Playa Negra, Playa Cocles. This side of the country
-              includes some pristine beaches and lush jungle. You won't find the high rise condos or international hotels here
-              and that's why we love it! 
+              The wonders of the Caribbean coast including Limon, Playa Negra,
+              Playa Cocles. This side of the country includes some pristine
+              beaches and lush jungle. You won't find the high rise condos or
+              international hotels here and that's why we love it!
             </p>
             <div className="card-actions justify-end">
               <Link to="/caribbean" className="btn btn-primary">
