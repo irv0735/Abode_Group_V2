@@ -14,8 +14,12 @@ function Caribbean() {
       <h1 className="pageHeader">Properties</h1>
       <div className="property-resize">
         <ul className="categoryListings ">
-          {Object.keys(propertiesMap).filter((title) => title === 'caribbean').map((unit) => {
-            return (
+          {Object.keys(propertiesMap).map((title) => {
+            let units = [];
+            if (title === "caribbean") {
+              units = propertiesMap[title]
+            }
+            return units.map((unit) => (
               <PropertyCard
                 key={unit.id}
                 name={unit.name}
@@ -27,7 +31,7 @@ function Caribbean() {
                 rate={unit.rate}
                 abblink={unit.link}
               />
-            );
+            ));
           })}
         </ul>
       </div>

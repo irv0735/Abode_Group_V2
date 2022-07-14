@@ -1,6 +1,6 @@
 const PROPERTY_DATA = [
   {
-    title: 'Central',
+    title: 'central',
     units: [
       {
         id: 1,
