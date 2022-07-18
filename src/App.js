@@ -5,6 +5,7 @@ import FullList from "./pages/FullList/FullList";
 import Navigation from "./pages/Navigation/Navigation";
 import Landing from "./pages/Landing/Landing";
 import PropertyDetails from "./pages/PropertyDetails/PropertyDetails";
+import PropertyDetailsPacific from "./pages/PropertyDetails/PropertyDetailsPacific.jsx";
 
 const App = () => {
   return (
@@ -19,6 +20,10 @@ const App = () => {
           <Route path="/all-properties" element={<FullList />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/property-details" element={<PropertyDetails />} />
+          <Route
+            path="/property-details-pacific"
+            element={<PropertyDetailsPacific />}
+          />
         </Route>
       </Routes>
       <Footer />

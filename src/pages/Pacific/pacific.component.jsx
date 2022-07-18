@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import bedIcon from "../../assets/svg/bedIcon.svg";
 import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
-import caribbeanApartment from "../../assets/photos/carribean-apartment.jpg";
+import pacificApartment from "../../assets/photos/pacific-apartment.jpg";
 
 const propertyData = [
   {
     id: 1,
-    name: "Caribbean Two Bedroom",
-    location: "Limón Province, Limon, Costa Rica",
+    name: "Pacific Two Bedroom",
+    location: "Coco, Guanacaste Province, Costa Rica",
     guestCount: 3,
     bedrooms: 2,
     beds: 3,
@@ -37,14 +37,14 @@ const propertyData = [
 function Pacific() {
   return (
     <div className="category">
-      <h1 className="pageHeader">Caribbean Properties</h1>
+      <h1 className="pageHeader">Pacific Properties</h1>
       <div className="property-resize">
         <ul className="categoryListings">
           {propertyData.map((property) => (
             <div className="card w-96 glass">
               <figure>
                 <img
-                  src={caribbeanApartment}
+                  src={pacificApartment}
                   alt="green iguana"
                   className="card-photo"
                 />
@@ -75,9 +75,12 @@ function Pacific() {
                         className="btn btn-primary"
                         target="none"
                       >
-                        View On AirBnB
+                        Property Pending
                       </a>
-                      <Link to="/property-details" className="btn btn-primary">
+                      <Link
+                        to="/property-details-pacific"
+                        className="btn btn-primary"
+                      >
                         View property details
                       </Link>
                     </div>
