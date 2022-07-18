@@ -43,11 +43,6 @@ const Navigation = () => {
                 About Us
               </a>
             </li>
-            <li>
-              <a href="/guide" className="btn btn-ghost normal-case text-xl">
-                Guest Guide
-              </a>
-            </li>
             {currentUser ? (
               <li onClick={signOutUser}>
                 <a href="/" className="btn btn-ghost normal-case text-xl">
