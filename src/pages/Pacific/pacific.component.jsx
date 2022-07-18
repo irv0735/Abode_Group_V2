@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 import bedIcon from "../../assets/svg/bedIcon.svg";
 import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
+import caribbeanApartment from "../../assets/photos/carribean-apartment.jpg";
 
 const propertyData = [
   {
     id: 1,
-    name: "Perfectly Located 2 Story Condo just for YOU!",
-    location: "San Rafael de Escazú, San José Province, Costa Rica",
+    name: "Caribbean Two Bedroom",
+    location: "Limón Province, Limon, Costa Rica",
     guestCount: 3,
-    bedrooms: 1,
-    beds: 2,
-    baths: 1.5,
-    rate: 87,
+    bedrooms: 2,
+    beds: 3,
+    baths: 2,
+    rate: 100,
     link: "https://www.airbnb.com/rooms/52828836?guests=1&adults=1&s=67&unique_share_id=f5a499d1-e395-460c-b1ee-c4ce2809fac0",
     photos: [
       {
@@ -36,14 +37,14 @@ const propertyData = [
 function Pacific() {
   return (
     <div className="category">
-      <h1 className="pageHeader">Properties</h1>
+      <h1 className="pageHeader">Caribbean Properties</h1>
       <div className="property-resize">
         <ul className="categoryListings">
           {propertyData.map((property) => (
             <div className="card w-96 glass">
               <figure>
                 <img
-                  src={property.photos[0].imageUrl}
+                  src={caribbeanApartment}
                   alt="green iguana"
                   className="card-photo"
                 />
