@@ -1,3 +1,28 @@
+.property-details-container {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.property-paragraph {
+  width: fit-content;
+  margin-top: 55px;
+  margin-left: 30px;
+}
+
+@media (max-width: 799px) {
+  .property-details-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 799px) {
+  .property-paragraph {
+    margin-top: 0px;
+  }
+}
+
 @media (max-width: 438px) {
   .property-details-info {
     width: 300px;

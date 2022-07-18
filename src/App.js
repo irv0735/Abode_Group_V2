@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import { SignIn, SanJose, Pacific, Caribbean, Guide } from "./pages";
+import { SignIn, SanJose, Pacific, Caribbean } from "./pages";
 import FullList from "./pages/FullList/FullList";
 import Navigation from "./pages/Navigation/Navigation";
 import Landing from "./pages/Landing/Landing";
@@ -19,7 +19,6 @@ const App = () => {
           <Route path="/sanjose" element={<SanJose />} />
           <Route path="/caribbean" element={<Caribbean />} />
           <Route path="/all-properties" element={<FullList />} />
-          <Route path="/guide" element={<Guide />} />
           <Route path="/property-details" element={<PropertyDetails />} />
           <Route
             path="/property-details-pacific"

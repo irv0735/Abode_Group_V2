@@ -14,13 +14,13 @@ import bathtubIcon from "../../assets/svg/bathtubIcon.svg";
 const propertyDataCaribbean = [
   {
     id: 1,
-    name: "Pacific Two Bedroom",
-    location: "Coco, Guanacaste Province, Costa Rica",
+    name: "Gorgeous three bedroom apartment",
+    location: "Limon, Limón Province, Costa Rica",
     guestCount: 3,
-    bedrooms: 2,
+    bedrooms: 3,
     beds: 3,
-    baths: 2,
-    rate: 100,
+    baths: 3,
+    rate: 150,
     link: "https://www.airbnb.com/rooms/52828836?guests=1&adults=1&s=67&unique_share_id=f5a499d1-e395-460c-b1ee-c4ce2809fac0",
     photos: [
       {
@@ -37,7 +37,7 @@ const propertyDataPacific = [
     location: "Coco, Guanacaste Province, Costa Rica",
     guestCount: 3,
     bedrooms: 2,
-    beds: 3,
+    beds: 2,
     baths: 2,
     rate: 100,
     link: "https://www.airbnb.com/rooms/52828836?guests=1&adults=1&s=67&unique_share_id=f5a499d1-e395-460c-b1ee-c4ce2809fac0",
