@@ -6,6 +6,7 @@ import Navigation from "./pages/Navigation/Navigation";
 import Landing from "./pages/Landing/Landing";
 import PropertyDetails from "./pages/PropertyDetails/PropertyDetails";
 import PropertyDetailsPacific from "./pages/PropertyDetails/PropertyDetailsPacific.jsx";
+import PropertyDetailsCaribbean from "./pages/PropertyDetails/PropertyDetailsCaribbean";
 
 const App = () => {
   return (
@@ -23,6 +24,10 @@ const App = () => {
           <Route
             path="/property-details-pacific"
             element={<PropertyDetailsPacific />}
+          />
+          <Route
+            path="/property-details-caribbean"
+            element={<PropertyDetailsCaribbean />}
           />
         </Route>
       </Routes>
