@@ -2,15 +2,6 @@
   --cloud-blue: #e4f2f5;
 }
 
-body {
-  background: url("./palm-drawing.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  image-rendering: -webkit-optimize-contrast;
-}
-
 .title-background {
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
   filter: blur(10px);
@@ -46,7 +37,6 @@ body {
 }
 
 .aboutUs {
-  background: radial-gradient(#fff, var(--cloud-blue));
   flex-direction: column;
   padding: 10px;
   margin-top: 30px;

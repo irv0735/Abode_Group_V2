@@ -13,7 +13,7 @@ const Navigation = () => {
     <>
       <div className="navbar bg-base-100">
         <h1>
-          <a href="/#home" className="btn btn-ghost normal-case text-xl">
+          <a href="/#home" className="btn btn-ghost normal-case text-3xl">
             Abode Group
           </a>
         </h1>

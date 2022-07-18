@@ -1,11 +1,3 @@
-category {
-  background: url("./palm-tree.avif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .categoryListings {
   display: flex;
   flex-direction: row;
@@ -15,18 +7,10 @@ category {
 .pageHeader {
   font-size: 30px;
   margin-bottom: -10px;
-  background-color: #e4f2f5;
   margin-bottom: -30px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  margin-right: 1160px;
-  margin-left: 10px;
-}
-
-@media (max-width: 1504px) {
-  .pageHeader {
-    margin-right: 20px;
-  }
+  text-align: center;
 }
